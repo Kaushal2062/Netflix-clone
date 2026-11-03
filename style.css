@@ -1,0 +1,365 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(background.jpg);
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: white;
+    padding: 8px 16px; /* Added padding for better button appearance */
+    margin-left: 10px; /* Added margin to space out buttons */
+    border-radius: 4px; /* Added rounded corners */
+    cursor: pointer; /* Added pointer cursor for better UX */
+    font-size: 16px; /* Added font size */
+}
+
+nav button:hover {
+    background: #ff0000; /* Added hover effect for better interactivity */
+}
+.bg{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 10px;
+}
+.content{
+    font-family: sans-serif;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+}
+.signup{
+    text-align: center;
+}
+.content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    min-width: 1000px;
+}
+.content h4{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Space between email box and button box */
+    margin-top: 30px;
+}
+
+.email-box {
+    background: rgba(0, 0, 0, 0.5); /* Darken the background */
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ccc;
+    width: 300px; /* Set fixed width */
+    height: 50px; /* Set fixed height */
+    display: flex;
+    align-items: center; /* Vertically centers the input */
+}
+
+.email-box input {
+    width: 100%; 
+    height: 100%;
+    border: none; 
+    outline: none;
+    padding: 12px;
+    font-size: 16px;
+    background: transparent;
+    color: rgb(255, 255, 255);
+}
+
+.button-box {
+    background: #db0001;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.button-box button {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    padding: 15px 30px; 
+    font-size: 16px;
+    cursor: pointer;
+    height: 100%; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.new-section {
+    background-color: #000000;  /* Set a new background color (e.g., dark gray) */
+    padding: 50px 0;
+    color: white;
+    text-align:left;
+}
+
+.trending-sec h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    margin-left: 40px;
+}
+.movie-sec{
+    display:flex;  
+    justify-content: center;  
+    flex-wrap: wrap;
+    gap: 15px; 
+    margin-bottom: 10px;
+    padding: 15px;
+    margin-left: 10px;
+}
+.movie-sec :hover{
+    transform: scale(1.05);
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+    border-radius: 0.25rem;
+}
+.box-img{
+    height: 345px;
+    background-size: cover;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 0.5rem;
+    height: 196px;
+    width: 140px;
+}
+.reasons{
+    padding: 50px;
+    background: none;
+}
+.reasons h2{
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.reason-box {
+    background-color:#000000;
+    border-radius: 10px;
+    padding: 0px 20px 50px 20px;
+    gap: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.reason-box:hover {
+    transform: scale(1.05);
+    border: none;
+}
+.reason-box h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align:left;
+}
+
+.reason-box p {
+    font-size: 16px;
+    color: #ccc;
+    text-align: right;
+}
+.box-content {
+    background-color: rgb(63, 53, 100);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(25% - 40px); /* 4 items per row */
+    max-width: calc(25% - 40px);
+}
+.box-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(214, 214, 214, 0.2);
+}
+.box-content h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top:15px;
+    text-align: left;
+}
+.box-content p {
+    font-size: 12px;
+    color: #ccc;
+    margin-top:15px;
+    text-align: right;
+}
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 0; /* Reduced padding */
+    margin-bottom: 0; /* Reduced margin */
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px; /* Reduced padding */
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 1px; /* Reduced margin */
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px; /* Reduced padding */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 15px 20px; /* Reduced padding */
+}
+
+.accordion input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+}
+footer{
+    margin-top: 15px;
+}
+.foot-panel1{
+    background-color: black;
+    color: #ffffffb3;
+    display: flex;
+    height: 50px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.foot-panel2{
+    height: 300px;
+    background-color:#000000;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 30px;
+}
+ul a{
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+    color: #dddd;
+}
+.foot-panel3{
+    background-color: #232f3e;
+    border-top: 0.5px solid rgb(0, 0, 0);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    width: 100px;
+}
+.foot-panel4{
+    background-color: #0f1111;
+    color: #f3f3f3;
+    height: 70px;
+}
+.pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:3px;
+    font-size: 0.7rem;
+    padding-top: 25px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    padding-top: 5px;
+}
+
+
+
+
